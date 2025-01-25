@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a795bad9f412418cabeb27128023398, type: 3}
+  m_Name: SFXGroup_Metal
+  m_EditorClassIdentifier: 
+  sfxType: 1
+  clips:
+  - {fileID: 8300000, guid: ab1f3e29d515e4f1e8fb095410351cae, type: 3}
+  - {fileID: 8300000, guid: 55b02c66b85614024a51ed3d60f9646e, type: 3}
+  - {fileID: 8300000, guid: fe309a5c0b59941f4a4c609f54ee9fb1, type: 3}
