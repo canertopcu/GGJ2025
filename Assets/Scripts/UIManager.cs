@@ -28,6 +28,8 @@
             ChangePage(PageType.MainScreen);
             SoundManager.Instance.PlayMainMenuMusic();
             SoundManager.Instance.SetMusicVolume(1f);
+            GameManager.Instance.GameState = GameState.MainMenu;
+
         }
 
         public void OpenCredits()
@@ -40,6 +42,7 @@
             ChangePage(PageType.Game);
             SoundManager.Instance.PlayGameMusic();
             SoundManager.Instance.SetMusicVolume(0.5f);
+            GameManager.Instance.GameState = GameState.Playing;
         }
 
         public void OpenWinPage()

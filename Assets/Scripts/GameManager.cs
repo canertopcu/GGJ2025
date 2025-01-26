@@ -1,12 +1,18 @@
+using System;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
+    public GameState GameState = GameState.MainMenu;
     public bool isGameFinalized=false;
-
-    public void ResetGame()
+ 
+    internal void PlayerKilled(int playerID)
     {
-        isGameFinalized = false;
+        GameState = GameState.Pause;
+        if (playerID == 1) {
+            UIManager.Instance.OpenLosePage();
+        } else { 
+            UIManager.Instance.OpenWinPage();
+        }
     }
-
 }

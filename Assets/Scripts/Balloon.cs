@@ -7,7 +7,8 @@ public class Balloon : MonoBehaviour
     public ParticleSystem particleSystem;
 
     internal void PlayParticle()
-    { 
+    {
+        particleSystem.transform.SetParent(null);
         particleSystem.gameObject.SetActive(true);
         particleSystem.Play();
 
